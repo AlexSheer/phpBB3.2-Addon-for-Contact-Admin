@@ -1,0 +1,7 @@
+services:
+    sheer.contactadmin_addon.listener:
+        class: sheer\contactadmin_addon\event\listener
+        arguments:
+            - '@user'
+        tags:
+            - { name: event.listener }
